@@ -1,0 +1,95 @@
+/* Общий стиль секции отзывов */
+#testimonials {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.section-title {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* Контейнер для всех отзывов */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  opacity: 0; /* Изначально скрываем */
+  transform: translateY(20px); /* Сдвиг вниз */
+  animation: fadeInUp 1s ease-out forwards; /* Анимация появления */
+}
+
+/* Индивидуальный отзыв */
+.testimonial {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  text-align: left;
+  opacity: 0; /* Изначально скрываем */
+  transform: translateY(20px); /* Сдвиг вниз */
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: var(--delay); /* Используем переменную для задержки */
+}
+
+/* Блок автора отзыва */
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.testimonial-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #00796b;
+}
+
+.author-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Анимация появления */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 28px;
+  }
+
+  .testimonial {
+    padding: 15px;
+  }
+
+  .testimonial-text {
+    font-size: 16px;
+  }
+
+  .testimonial-avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .author-name {
+    font-size: 14px;
+  }
+}

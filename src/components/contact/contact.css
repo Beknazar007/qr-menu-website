@@ -1,0 +1,70 @@
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+  }
+  
+  #contact h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  #contact p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  /* Контейнер для иконок */
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .contact-icons a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 22px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .contact-icons i {
+    margin-right: 10px;
+    font-size: 30px;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-icons a:hover {
+    color: #00796b; /* Цвет при наведении */
+    transform: translateY(-5px); /* Легкое поднятие иконки */
+  }
+  
+  .contact-icons a:hover i {
+    color: #00796b; /* Изменение цвета иконки при наведении */
+  }
+  
+  /* Адаптивность: на мобильных устройствах уменьшаем размер */
+  @media (max-width: 768px) {
+    #contact h2 {
+      font-size: 28px;
+    }
+  
+    #contact p {
+      font-size: 18px;
+    }
+  
+    .contact-icons {
+      gap: 15px;
+    }
+  
+    .contact-icons a {
+      font-size: 20px;
+    }
+  }
+  
