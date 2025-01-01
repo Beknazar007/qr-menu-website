@@ -64,21 +64,21 @@ function Features() {
                           </div> */}
                                     <div className="featurs_block"> 
                     <div className="feature">
-                            <h3 className="feature-title" data-lang-en="Digital QR Menu" data-lang-ru="Цифровое QR-меню">Digital QR Menu</h3>
+                            <h3 className="feature-title" data-lang-en="Digital QR Menu" data-lang-ru="Цифровое QR-меню">Basic</h3>
                                 <p className="feature-description" data-lang-en="Replace paper menus with a seamless digital experience." data-lang-ru="Замените бумажные меню на удобный цифровой опыт.">
-                                    Replace paper menus with a seamless digital experience.
+                                Access to basic features Single QR Menu
                                 </p>
                         </div>
                         <div className="feature">
-                            <h3 className="feature-title" data-lang-en="Online Payment" data-lang-ru="Онлайн-оплата"> Online Payment</h3>
+                            <h3 className="feature-title" data-lang-en="Online Payment" data-lang-ru="Онлайн-оплата"> Pro</h3>
                             <p className="feature-description" data-lang-en="Enable customers to pay securely from their devices." data-lang-ru="Позвольте клиентам безопасно оплачивать со своих устройств.">
-                                Enable customers to pay securely from their devices.
+                            Access to all features Multiple QR Menus Enterprise Analytics
                             </p>
                         </div>
                         <div className="feature">
-                            <h3 className="feature-title" data-lang-en="Order Tracking" data-lang-ru="Отслеживание заказов"> Order Tracking </h3>
+                            <h3 className="feature-title" data-lang-en="Order Tracking" data-lang-ru="Отслеживание заказов"> Enterprise </h3>
                             <p className="feature-description" data-lang-en="Real-time order updates for your kitchen and customers." data-lang-ru="Обновления заказов в реальном времени для вашей кухни и клиентов.">
-                                Real-time order updates for your kitchen and customers.
+                            Custom QR Menu Solutions Dedicated Support Enterprise Analytics
                             </p>
                         </div>   
                     </div>
