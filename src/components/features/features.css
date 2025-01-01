@@ -63,13 +63,13 @@
 
 .feature-title {
   font-size: 22px;
-  color: #00796b;
+  color: #000;
   margin-bottom: 10px;
 }
 
 .feature-description {
   font-size: 13px;
-  color: #666;
+  color: #000;
   line-height: 1.5;
 }
 
