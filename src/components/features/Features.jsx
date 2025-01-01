@@ -16,69 +16,40 @@ function Features() {
               <div className="features">
                   <div className="featurs_block"> 
                     <div className="feature">
-                            <h3 className="feature-title" data-lang-en="Digital QR Menu" data-lang-ru="Цифровое QR-меню">Digital QR Menu</h3>
+                            <h3 className="feature-title" data-lang-en="Digital QR Menu" data-lang-ru="Цифровое QR-меню">A menu that sells</h3>
                                 <p className="feature-description" data-lang-en="Replace paper menus with a seamless digital experience." data-lang-ru="Замените бумажные меню на удобный цифровой опыт.">
-                                    Replace paper menus with a seamless digital experience.
+                                Entice your guests with colorful photos of dishes and juicy descriptions of their taste, recommend new products, set up bonuses and promotions in iikoCard!
                                 </p>
                         </div>
                         <div className="feature">
-                            <h3 className="feature-title" data-lang-en="Online Payment" data-lang-ru="Онлайн-оплата"> Online Payment</h3>
+                            <h3 className="feature-title" data-lang-en="Online Payment" data-lang-ru="Онлайн-оплата"> All dishes on the menu are always up to date</h3>
                             <p className="feature-description" data-lang-en="Enable customers to pay securely from their devices." data-lang-ru="Позвольте клиентам безопасно оплачивать со своих устройств.">
-                                Enable customers to pay securely from their devices.
-                            </p>
+                            No "Oh, sorry, we don't have this today"! If a dish is put on hold, the guest simply won't see it - the changes are reflected immediately in the QR menu                            </p>
                         </div>
                         <div className="feature">
-                            <h3 className="feature-title" data-lang-en="Order Tracking" data-lang-ru="Отслеживание заказов"> Order Tracking </h3>
+                            <h3 className="feature-title" data-lang-en="Order Tracking" data-lang-ru="Отслеживание заказов"> There is no need to wait for anyone </h3>
                             <p className="feature-description" data-lang-en="Real-time order updates for your kitchen and customers." data-lang-ru="Обновления заказов в реальном времени для вашей кухни и клиентов.">
-                                Real-time order updates for your kitchen and customers.
-                            </p>
+                            If a guest wants to order something more, he doesn't need to look for a waiter, he can do it right away via the QR menu. The same applies to payment                          </p>
                         </div>   
                     </div>
                         <div className='screen'>
                                 <img src={screenMenu} alt=""  className='screen_menu'/>
                         </div>
-                        {/* <div className="pricing">
-                                    <div className="plan">
-                                        <h3 className="plan-title" data-lang-en="Basic" data-lang-ru="Базовый">Basic</h3>
-                                            <ul className="plan-features">
-                                                <li data-lang-en="Access to basic features" data-lang-ru="Доступ к базовым функциям">Access to basic features</li>
-                                                <li data-lang-en="Single QR Menu" data-lang-ru="Одно QR-меню">Single QR Menu</li>
-                                            </ul>
-                                    </div>
-                                    <div className="plan popular">
-                                        <h3 className="plan-title" data-lang-en="Pro" data-lang-ru="Про">Pro</h3>
-                                            <ul className="plan-features">
-                                                <li data-lang-en="Access to all features" data-lang-ru="Доступ ко всем функциям">Access to all features</li>
-                                                <li data-lang-en="Multiple QR Menus" data-lang-ru="Несколько QR-меню">Multiple QR Menus</li>
-                                                <li data-lang-en="Priority Support" data-lang-ru="Приоритетная поддержка">Priority Support</li>
-                                            </ul>
-                                    </div>
-                                    <div className="plan">
-                                        <h3 className="plan-title" data-lang-en="Enterprise" data-lang-ru="Корпоративный">Enterprise</h3>
-                                            <ul className="plan-features">
-                                            <li data-lang-en="Custom QR Menu Solutions" data-lang-ru="Индивидуальные решения для QR-меню">Custom QR Menu Solutions</li>
-                                            <li data-lang-en="Dedicated Support" data-lang-ru="Выделенная поддержка">Dedicated Support</li>
-                                            <li data-lang-en="Enterprise Analytics" data-lang-ru="Корпоративная аналитика">Enterprise Analytics</li>
-                                            </ul>
-                                    </div>
-                          </div> */}
                                     <div className="featurs_block"> 
                     <div className="feature">
-                            <h3 className="feature-title" data-lang-en="Digital QR Menu" data-lang-ru="Цифровое QR-меню">Basic</h3>
+                            <h3 className="feature-title" data-lang-en="Digital QR Menu" data-lang-ru="Цифровое QR-меню">Payroll can be reduced</h3>
                                 <p className="feature-description" data-lang-en="Replace paper menus with a seamless digital experience." data-lang-ru="Замените бумажные меню на удобный цифровой опыт.">
-                                Access to basic features Single QR Menu
-                                </p>
+                                With ordering and payment via QR menu, the workload on waiters will be reduced and fewer employees will be required to work in the dining room.                                </p>
                         </div>
                         <div className="feature">
-                            <h3 className="feature-title" data-lang-en="Online Payment" data-lang-ru="Онлайн-оплата"> Pro</h3>
+                            <h3 className="feature-title" data-lang-en="Online Payment" data-lang-ru="Онлайн-оплата"> Can be turned on quickly</h3>
                             <p className="feature-description" data-lang-en="Enable customers to pay securely from their devices." data-lang-ru="Позвольте клиентам безопасно оплачивать со своих устройств.">
-                            Access to all features Multiple QR Menus Enterprise Analytics
-                            </p>
+                            Everything you need is already in iiko - no need to look for developers and wait! Give your guests a convenient and beautiful QR menu right now!                            </p>
                         </div>
                         <div className="feature">
-                            <h3 className="feature-title" data-lang-en="Order Tracking" data-lang-ru="Отслеживание заказов"> Enterprise </h3>
+                            <h3 className="feature-title" data-lang-en="Order Tracking" data-lang-ru="Отслеживание заказов"> Analysis of demand for menu items                            </h3>
                             <p className="feature-description" data-lang-en="Real-time order updates for your kitchen and customers." data-lang-ru="Обновления заказов в реальном времени для вашей кухни и клиентов.">
-                            Custom QR Menu Solutions Dedicated Support Enterprise Analytics
+                            What dishes do guests look at but don't order? And which ones do they fall in love with at first sight? Connect Yandex.Metrica to dish cards and find out!
                             </p>
                         </div>   
                     </div>
