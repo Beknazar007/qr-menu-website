@@ -27,7 +27,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-wrap: wrap; */
 }
 
 .featurs_block {
@@ -180,28 +179,14 @@
   }
 }
 
-/* .forfree {
-  font-size: 45px;
-  font-weight: bold;
-  color: #00796b;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-}
-
-@media (max-width: 768px) { 
-  .forfree {
-    font-size: 20px;
-  }
-} */
- /* Стили для блока forfree */
 .forfree {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: #00796b; /* Цвет фона */
-  color: #fff; /* Цвет текста */
+  background: #00796b;
+  color: #fff; 
   padding: 40px 20px;
   border-radius: 15px;
   margin: 20px;
@@ -216,7 +201,7 @@
 }
 
 .forfree_btn {
-  background-color: #00796b; /* Цвет кнопки */
+  background-color: #00796b; 
   color: #fff;
   border: 2px solid #ffff;
   border-radius: 10px;
@@ -228,7 +213,7 @@
 }
 
 .forfree_btn:hover {
-  background-color: #060202; /* Темнее при наведении */
+  background-color: #00796b;
   transform: scale(1.05);
 }
 
