@@ -1,70 +1,259 @@
-#contact {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #f7f7f7;
+
+
+
+
+strong{
+  color: #00796b;
+}
+
+.text-true {
+  width: 90%;
+}
+
+
+.promo {
+  background-color: #ffff;
+  padding: 40px;
+  text-align: center;
+}
+
+.promo h2 {
+  font-size: 36px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.promo_text {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+
+.promo-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo-content {
+  flex: 1;
+  text-align: left;
+}
+
+.promo ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+.promo ul li {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.promo ul li strong {
+  color: #00796b;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form label {
+  font-size: 16px;
+  color: #000000;
+}
+
+form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #00796b;
+  border-radius: 5px;
+  width: 60%;
+}
+
+form input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+form p {
+  font-size: 14px;
+  color: #000000;
+}
+
+.form-btn {
+  text-align: center;
+}
+
+.form-btn .btn {
+  background-color: #00796b;
+  color: #ffff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-btn .btn:hover {
+  background-color: #004d40;
+}
+
+.promo-img {
+  flex: 1;
+  max-width: 100%;
+}
+
+.promo-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .promo h2 {
+    font-size: 30px;
   }
-  
-  #contact h2 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
-    font-weight: 700;
-  }
-  
-  #contact p {
-    font-size: 20px;
-    color: #666;
+
+  .promo_text {
+    font-size: 16px;
     margin-bottom: 30px;
   }
-  
-  /* Контейнер для иконок */
-  .contact-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .contact-icons a {
-    display: flex;
+
+  .promo-block {
+    flex-direction: column;
     align-items: center;
-    text-decoration: none;
-    color: #333;
-    font-size: 22px;
-    transition: transform 0.3s ease, color 0.3s ease;
   }
-  
-  .contact-icons i {
-    margin-right: 10px;
+
+  .promo-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .promo-img {
+    max-width: 100%;
+  }
+
+  form input {
+    font-size: 14px;
+  }
+
+  .form-btn .btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo h2 {
+    font-size: 24px;
+  }
+
+  .promo_text {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .promo ul li {
+    font-size: 14px;
+  }
+
+  .form-btn .btn {
+    font-size: 14px;
+    padding: 12px 25px;
+  }
+}
+
+
+
+.section {
+  background-color: #f8f8f8;
+  padding: 40px;
+  text-align: center;
+}
+
+.contactus {
+  font-size: 36px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.contactus-text{
+  font-size: 18px;
+  color: #ffff;
+  margin-bottom: 40px;
+}
+
+/* Стили для иконок */
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.contact-icons a {
+  text-decoration: none;
+  color: #00796b;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.contact-icons a:hover {
+  color: #004d40;
+  transform: translateY(-5px);
+}
+
+.contact-icons i {
+  font-size: 30px;
+}
+
+
+@media (max-width: 768px) {
+  h2 {
     font-size: 30px;
-    transition: color 0.3s ease;
   }
-  
-  .contact-icons a:hover {
-    color: #00796b; /* Цвет при наведении */
-    transform: translateY(-5px); /* Легкое поднятие иконки */
+
+  p {
+    font-size: 16px;
+    margin-bottom: 30px;
   }
-  
-  .contact-icons a:hover i {
-    color: #00796b; /* Изменение цвета иконки при наведении */
+
+  .contact-icons {
+    flex-direction: column;
+    gap: 20px;
   }
-  
-  /* Адаптивность: на мобильных устройствах уменьшаем размер */
-  @media (max-width: 768px) {
-    #contact h2 {
-      font-size: 28px;
-    }
-  
-    #contact p {
-      font-size: 18px;
-    }
-  
-    .contact-icons {
-      gap: 15px;
-    }
-  
-    .contact-icons a {
-      font-size: 20px;
-    }
+
+  .contact-icons a {
+    font-size: 20px;
   }
-  
+}
+
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .contact-icons a {
+    font-size: 18px;
+  }
+
+  .contact-icons i {
+    font-size: 25px;
+  }
+}
