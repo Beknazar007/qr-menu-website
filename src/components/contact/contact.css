@@ -228,8 +228,11 @@ form p {
     margin-bottom: 30px;
   }
 
+  .form-btn {
+    margin: 20px 0px ;
+  }
+
   .contact-icons {
-    flex-direction: column;
     gap: 20px;
   }
 
