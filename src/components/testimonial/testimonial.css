@@ -7,10 +7,11 @@
 
 .sectionn-text {
   font-size: 1.2rem;
-  color: #555;
+  color: #000;
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.5;
+  margin-bottom: 50px;
 }
 
 .section-title {
