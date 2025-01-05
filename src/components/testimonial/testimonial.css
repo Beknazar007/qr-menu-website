@@ -20,18 +20,18 @@
   font-weight: 700;
 }
 
-/* Контейнер для всех отзывов */
+
 .testimonials {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   justify-items: center;
-  opacity: 0; /* Изначально скрываем */
-  transform: translateY(20px); /* Сдвиг вниз */
-  animation: fadeInUp 1s ease-out forwards; /* Анимация появления */
+  opacity: 0; 
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards; 
 }
 
-/* Индивидуальный отзыв */
+
 .testimonial {
   background: #fff;
   padding: 30px;
@@ -39,13 +39,12 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   text-align: left;
-  opacity: 0; /* Изначально скрываем */
-  transform: translateY(20px); /* Сдвиг вниз */
+  opacity: 0; 
+  transform: translateY(20px); 
   animation: fadeInUp 1s ease-out forwards;
-  animation-delay: var(--delay); /* Используем переменную для задержки */
+  animation-delay: var(--delay); 
 }
 
-/* Блок автора отзыва */
 .testimonial-author {
   display: flex;
   align-items: center;
@@ -76,7 +75,7 @@
   color: #333;
 }
 
-/* Анимация появления */
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -88,7 +87,7 @@
   }
 }
 
-/* Адаптивность */
+
 @media (max-width: 768px) {
   .section-title {
     font-size: 28px;

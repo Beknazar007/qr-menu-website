@@ -24,9 +24,9 @@ function Contact() {
               <label htmlFor="phone">Phone</label>
               <input type="tel" name="phone" id="phone" placeholder='555 55 55 55' required/>
 
-              <label>
-                <input type="checkbox" name="agreement" required />
-              <p className=' text-true'>I agree to the processing of personal data and the receipt of information and marketing communications in accordance with<strong> the terms and conditions </strong>and <strong> the Personal Data Processing Policy</strong></p>
+              <label className='checkbox-text'>
+                <input type="checkbox" name="agreement" required  className='checkbox'/>
+                  <p className='text-true'>I agree to the processing of personal data and the receipt of information and marketing communications in accordance with<strong> the terms and conditions </strong>and <strong> the Personal Data Processing Policy</strong></p>
               </label>
               <div className="form-btn">
                 <button className="btn">send</button>

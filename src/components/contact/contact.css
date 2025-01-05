@@ -7,7 +7,7 @@ strong{
 }
 
 .text-true {
-  width: 90%;
+  width: 80%;
 }
 
 
@@ -118,6 +118,11 @@ form p {
   border-radius: 10px;
 }
 
+.checkbox-text {
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   .promo h2 {
     font-size: 30px;
@@ -225,11 +230,13 @@ form p {
 
   p {
     font-size: 16px;
-    margin-bottom: 30px;
+  }
+
+  .form-btn {
+    margin: 20px 0px ;
   }
 
   .contact-icons {
-    flex-direction: column;
     gap: 20px;
   }
 
@@ -246,7 +253,6 @@ form p {
 
   p {
     font-size: 14px;
-    margin-bottom: 20px;
   }
 
   .contact-icons a {
