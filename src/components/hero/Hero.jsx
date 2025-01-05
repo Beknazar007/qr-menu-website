@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './hero.css'
 
 
+
 function Hero() {
+
   return (
     <>
      <section className="hero">
@@ -16,7 +18,7 @@ function Hero() {
                 </p>
           </dixv>
               <div className="hero_btn">
-                <button data-lang-en="Get Started" data-lang-ru="Начать">Get Started</button>
+                <a href='#contact' data-lang-en="Get Started" data-lang-ru="Начать" className='get' >Get Started </a>
                </div>
            </div>
         </div>

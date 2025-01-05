@@ -2,7 +2,41 @@ import React from 'react'
 import './contact.css'
 import img from '../../assets/promo1.jpeg' 
   
-function Contact() {
+function Contact() {  
+  
+  const token = '7729310137:AAGO83raF_83WdeVm_vyqwBWxG4ygWhT8PU';
+const url = `https://api.telegram.org/bot${token}/sendMessage`;
+const chat_id = '@data_base_007'; // Используем chat_id вместо token_id
+
+const onSubmit = async (event) => {
+  event.preventDefault();
+  
+  const formData = new FormData(event.target);
+  const { name, email, phone } = Object.fromEntries(formData.entries());
+  const text = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}`;
+
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-type': 'application/json' },
+      body: JSON.stringify({
+        chat_id: chat_id, // Указываем правильный параметр для отправки сообщения
+        text: text,
+      }),
+    });
+
+    if (response.ok) {
+      alert('Сообщение успешно отправлено в Telegram!');
+    } else {
+      alert('Ошибка при отправке сообщения в Telegram.');
+    }
+  } catch (error) {
+    console.error('Ошибка:', error);
+    alert('Произошла ошибка при отправке сообщения.');
+  }
+};
+
+
   return (
     <>
       <section id='promo' className='promo'>
@@ -14,15 +48,15 @@ function Contact() {
                <li>QR menu for viewing dishes: <strong>free</strong></li>
                <li>QR menu with ordering dishes and payment: <strong>5,000 rubles / month for 1 establishment, 2nd and subsequent - 3,000 rubles / month</strong></li>
             </ul>
-            <form action="">
+            <form action="adris" onSubmit={onSubmit}>
               <label htmlFor="Name">Name</label>
-              <input type="text" name="name" id="name" required />
+              <input type="text" name="name" id="name" required  placeholder='Асанов Асан'/>
 
               <label htmlFor="E-mail">E-mail</label>
-              <input type="email" name="email" id="email" required/>
-
+              <input type="email" name="email" id="email" required placeholder='...@gmail.com' />
+             
               <label htmlFor="phone">Phone</label>
-              <input type="tel" name="phone" id="phone" placeholder='555 55 55 55' required/>
+              <input type="tel" name="phone" id="phone" placeholder='+996 555 55 55 55' required/>
 
               <label className='checkbox-text'>
                 <input type="checkbox" name="agreement" required  className='checkbox'/>
@@ -43,13 +77,13 @@ function Contact() {
                <p data-lang-en="Reach out to us via your favorite platform:"className='contactus-text'
                    data-lang-ru="Свяжитесь с нами через вашу любимую платформу:">Reach out to us via your favorite platform:</p>
              <div className="contact-icons">
-                  <a href="https://t.me/qrmenuapp" target="_blank" data-lang-en="Telegram" data-lang-ru="Телеграм">
+                  <a href="https://t.me/Temiraliev_Argen" target="_blank" data-lang-en="Telegram" data-lang-ru="Телеграм">
                         <i className="fa fa-telegram"></i> Telegram
                     </a>
-                   <a href="https://www.instagram.com/qrmenuapp" target="_blank" data-lang-en="Instagram" data-lang-ru="Инстаграм">
+                   <a href="https://www.instagram.com/invites/contact/?igsh=y506cyuearhv&utm_content=pjrsn89" target="_blank" data-lang-en="Instagram" data-lang-ru="Инстаграм">
                          <i className="fa fa-instagram"></i> Instagram
                   </a>
-                  <a href="https://wa.me/qrmenuapp" target="_blank" data-lang-en="WhatsApp" data-lang-ru="Вотсап">
+                  <a href="https://wa.me/+996555560686" target="_blank" data-lang-en="WhatsApp" data-lang-ru="Вотсап">
                         <i className="fa fa-whatsapp"></i> WhatsApp
                     </a>
             </div>        
