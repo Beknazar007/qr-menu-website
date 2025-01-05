@@ -183,6 +183,9 @@ form p {
   padding: 40px;
   text-align: center;
 }
+ span{
+  margin: 5px;
+ }
 
 .contactus {
   font-size: 36px;
