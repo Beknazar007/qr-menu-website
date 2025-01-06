@@ -56,8 +56,8 @@ function Features() {
                   
               </div>
               <div className='forfree'>
-                  <h2 className='forfree_text'>Организуйте продажи на каждом столе всего за 5000 р/мес!
-                       Первый месяц - бесплатно</h2>
+                  <h2 className='forfree_text'>Организуйте продажи на каждом столе всего за <strong className='price'>5000 р/мес!</strong> 
+                       Первый месяц - <strong>бесплатно</strong> </h2>
                   <button  className="forfree_btn">Попробать бесплатно</button>
               </div>
         </section>

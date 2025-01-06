@@ -19,7 +19,7 @@ function Testimonial() {
           <div className="testimonial">
             <h2 className='testimonial-name'>Replace the outdated pdf on the site</h2>
                 <p className="testimonial-text" data-lang-en="This app transformed our restaurant operations! Highly recommend." data-lang-ru="Это приложение преобразило нашу работу в ресторане! Настоятельно рекомендую.">
-                From iiko you can deploy your own website with the ability to order for delivery and pickup. But if you don’t need it now, and you already have a website, place a link to the QR menu on it so that there is always up-to-date information
+                From QR-MENU you can deploy your own website with the ability to order for delivery and pickup. But if you don’t need it now, and you already have a website, place a link to the QR menu on it so that there is always up-to-date information
                 </p>
           </div>
           <div className="testimonial">

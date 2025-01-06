@@ -185,8 +185,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: #00796b;
-  color: #fff; 
+  background: #fff;
+  color: #000; 
   padding: 40px 20px;
   border-radius: 15px;
   margin: 20px;
@@ -201,24 +201,29 @@
 }
 
 .forfree_btn {
-  background-color: #00796b; 
-  color: #fff;
-  border: 2px solid #ffff;
-  border-radius: 10px;
+  background-color: #fff; 
+  color: #000;
+  border: 2px solid #00796b;
+  border-radius: 8px;
   padding: 12px 24px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color, color 0.3s ease, transform 0.3s ease;
 }
 
 .forfree_btn:hover {
   background-color: #00796b;
   transform: scale(1.05);
+  color: #fff;
 }
 
 .forfree_btn:active {
   transform: scale(1);
+}
+
+.price{
+  font-size: 30px;
 }
 
 @media (max-width: 768px) {
