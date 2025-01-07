@@ -11,15 +11,21 @@ function Hero() {
       <div className="container">
          <div className="hero_contant">
           <dixv className="text">
-              <h2 data-lang-en="Streamline Your Restaurant Operations" data-lang-ru="Оптимизируйте работу ресторана">Streamline Your Restaurant Operations</h2>
-                 <p className='hero-text' data-lang-en="Empower your diners to browse, order, and pay effortlessly with just a scan of a QR code."
-                    data-lang-ru="Позвольте вашим гостям легко просматривать меню, заказывать и оплачивать с помощью QR-кода.">
-                       Empower your diners to browse, order, and pay effortlessly with just a scan of a QR code.
+              <h2 data-lang-en="Optimize Your Restaurant Operations" data-lang-ru="Оптимизируйте работу вашего ресторана">Streamline Your Restaurant Operations</h2>
+                 <p className='hero-text' data-lang-en="Allow your customers to easily browse, order, and pay orders by simply scanning a QR code."
+                    data-lang-ru="Позвольте своим посетителям  легко просматривать, заказывать и оплачивать заказы, просто отсканировав QR-код.">
+                       Allow your customers to easily browse, order, and pay orders by simply scanning a QR code.
                 </p>
           </dixv>
               <div className="hero_btn">
-                <a href='#contact' data-lang-en="Get Started" data-lang-ru="Начать" className='get' >Get Started </a>
-               </div>
+                <button data-lang-en="Try for Free!" data-lang-ru="Попробуйте бесплатно!"
+                  className="forfree_btn" 
+                  onClick={() => document.getElementById('promo').scrollIntoView({ behavior: 'smooth' })}
+                  >
+                  Try for Free!
+                  </button>
+
+                 </div>
            </div>
         </div>
      </section>
