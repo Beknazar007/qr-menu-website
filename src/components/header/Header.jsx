@@ -12,7 +12,7 @@ function Header() {
               </div>
               <nav className='nav'>
                   <a href="#features" data-lang-en="Features" data-lang-ru="Функции">Features</a>
-                 <a href="#testimonials" data-lang-en="Testimonials" data-lang-ru="Отзывы">free</a>
+                 <a href="#testimonials" data-lang-en="Testimonials" data-lang-ru="Отзывы">Free</a>
                   <a href="#contact" data-lang-en="Contact Us" data-lang-ru="Свяжитесь с нами">Contact Us</a>
               </nav>
               <div className="menu_icon">

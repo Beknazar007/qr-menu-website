@@ -39,13 +39,13 @@
 
 .nav a {
   text-decoration: none;
-  color: #00796b;
+  color: #000;
   font-size: 18px;
   transition: color 0.3s;
 }
 
 .nav a:hover {
-  color: #00574b;
+  color: #00796b;
 }
 
 .menu_icon {
