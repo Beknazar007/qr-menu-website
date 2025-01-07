@@ -30,11 +30,9 @@ function Contact() {
         alert('Сообщение успешно отправлено!');
         formRef.current.reset(); // Reset the form to its initial state
       } else {
-        alert('Ошибка при отправке сообщения.');
       }
     } catch (error) {
       console.error('Ошибка:', error);
-      alert('Произошла ошибка при отправке сообщения.');
     }
   };
 
