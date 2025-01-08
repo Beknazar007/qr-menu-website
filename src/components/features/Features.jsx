@@ -2,7 +2,7 @@ import React from 'react'
 import './features.css'
 import screenMenu from '../../assets/scriin.png'
 
-function Features() {
+function Features() {  
   return (
       <>
         <section id="features" className="section">
@@ -16,19 +16,21 @@ function Features() {
               <div className="features">
                   <div className="featurs_block"> 
                     <div className="feature">
-                            <h3 className="feature-title" data-lang-en="Digital QR Menu" data-lang-ru="Цифровое QR-меню">A MENU that sells</h3>
-                                <p className="feature-description" data-lang-en="Replace paper menus with a seamless digital experience." data-lang-ru="Замените бумажные меню на удобный цифровой опыт.">
+                            <h3 className="feature-title" data-lang-en="A MENU that sells" data-lang-ru="МЕНЮ, которое продает">A MENU that sells</h3>
+                                <p className="feature-description" data-lang-en="Entice your guests with colorful photos of dishes and juicy descriptions of their taste, recommend new products!" data-lang-ru="Увлекайте гостей красочными фотографиями блюд и сочными описаниями их вкуса, рекомендуйте новые продукты!">
                                 Entice your guests with colorful photos of dishes and juicy descriptions of their taste, recommend new products!
                                 </p>
-                        </div>
+                      </div>
                         <div className="feature">
-                            <h3 className="feature-title" data-lang-en="Always Updated MENU" data-lang-ru="Всегда актуальное меню"> Always updated MENU</h3>
-                            <p className="feature-description" data-lang-en="Enable customers to pay securely from their devices." data-lang-ru="Позвольте клиентам безопасно оплачивать со своих устройств.">
+                            <h3 className="feature-title" data-lang-en="Always Updated MENU" data-lang-ru="Всегда обновленное МЕНЮ"> Always updated MENU</h3>
+                          <p className="feature-description" data-lang-en=' No "Oh, sorry, we don`t have this today"! If a dish is put on hold, the guest simply won`t see it  - the changes are reflected immediately in the QR menu   '
+                              data-lang-ru="Никаких «Ой, извините, сегодня этого нет»! Если блюдо отложено, гость его просто не увидит — изменения сразу отражаются в QR-меню">
                             No "Oh, sorry, we don't have this today"! If a dish is put on hold, the guest simply won't see it - the changes are reflected immediately in the QR menu                            </p>
                         </div>
                         <div className="feature">
-                            <h3 className="feature-title" data-lang-en="Order & Pay Instantly" data-lang-ru="Заказ и оплата сразу"> Order & Pay Instantly </h3>
-                            <p className="feature-description" data-lang-en="Convenience without waiting for a waiter to order or pay the bill." data-lang-ru="Обновления заказов в реальном времени для вашей кухни и клиентов.">
+                            <h3 className="feature-title" data-lang-en="Order & Pay Instantly" data-lang-ru="Закажите и оплатите мгновенно"> Order & Pay Instantly </h3>
+                          <p className="feature-description" data-lang-en="Convenience without waiting for a waiter to order or pay the bill."
+                              data-lang-ru="Удобство: не нужно ждать официанта, чтобы сделать заказ или оплатить счет.">
                             Convenience without waiting for a waiter to order or pay the bill.
                           </p>
                         </div>   
@@ -36,17 +38,19 @@ function Features() {
                         <div className='screen'>
                                 <img src={screenMenu} alt=""  className='screen_menu'/>
                         </div>
-                                    <div className="featurs_block"> 
-                    <div className="feature">
-                            <h3 className="feature-title" data-lang-en="Digital QR Menu" data-lang-ru="Цифровое QR-меню">Save on Staff Costs</h3>
-                          <p className="feature-description" data-lang-en="With ordering and payment via QR menu, the workload on waiters will be reduced and fewer employees will be required to work in the dining room"
+                   <div className="featurs_block"> 
+                        <div className="feature">
+                            <h3 className="feature-title" data-lang-en="Save on Staff Costs" data-lang-ru="Экономьте на расходах на персонал">Save on Staff Costs</h3>
+                          <p className="feature-description" data-lang-en="With ordering and payment via QR menu, the workload on waiters will be reduced and fewer employees will be required to work in the dining room."
                               data-lang-ru="Благодаря заказу и оплате через QR-меню нагрузка на официантов сократится, и меньшему количеству сотрудников придется работать в зале.">
-                                With ordering and payment via QR menu, the workload on waiters will be reduced and fewer employees will be required to work in the dining room.                                </p>
+                               With ordering and payment via QR menu, the workload on waiters will be reduced and fewer employees will be required to work in the dining room.                               </p>
                         </div>
                         <div className="feature">
-                            <h3 className="feature-title" data-lang-en="Quick Start" data-lang-ru="Онлайн-оплата"> Quick Start</h3>
-                            <p className="feature-description" data-lang-en="No developers needed—start right away!" data-lang-ru="Не нужны разработчики — начните уже сейчас!">
-                            No developers needed—start right away! Give your guests a convenient and beautiful QR menu right now!                            </p>
+                            <h3 className="feature-title" data-lang-en="Quick Start" data-lang-ru="Быстрый старт"> Quick Start</h3>
+                          <p className="feature-description" data-lang-en="No developers needed—start right away! Give your guests a convenient and beautiful QR menu right now!"
+                              data-lang-ru="Не нужны разработчики — начните прямо сейчас! Подарите своим гостям удобное и красивое QR-меню прямо сейчас!">
+                            No developers needed—start right away! Give your guests a convenient and beautiful QR menu right now!
+                          </p>
                         </div>
                         {/* <div className="feature">
                             <h3 className="feature-title" data-lang-en="Order Tracking" data-lang-ru="Отслеживание заказов"> Analysis of demand for menu items                            </h3>

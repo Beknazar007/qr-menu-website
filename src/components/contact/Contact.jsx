@@ -54,43 +54,75 @@ function Contact() {
   return (
     <>
       <section id="promo" className="promo">
-        <h2 className="promo">Try it for <strong>free</strong>!</h2>
-        <p className="promo_text">
+      <h2 className="promo" data-lang-en="Try it for free!" data-lang-ru="Попробуйте бесплатно!"></h2>
+        <p  className="promo_text" data-lang-en="But that's not all: we will help you create a special menu for the site, tell you how to design it, and also share our experience in promotion!" data-lang-ru="Но это еще не всё: мы поможем вам создать специальное меню для сайта, расскажем, как его оформить, а также поделимся своим опытом в продвижении!">
           But that's not all: we will help you create a special menu for the site, 
           tell you how to design it, and also share our experience in promotion!
         </p>
         <div className="promo-block">
           <div className="promo-content">
-            <ul className="text-true">
-              <li>QR menu for viewing dishes: <strong>free</strong></li>
-              <li>QR menu with ordering dishes and payment: 
-                <strong>5,000 som / month for 1 establishment, 
-                2nd and subsequent - 3,000 som / month</strong>
-              </li>
-            </ul>
+          <ul className="text-true">
+                <li 
+                  data-lang-en="QR menu for viewing dishes: free" 
+                  data-lang-ru="QR-меню для просмотра блюд: бесплатно"
+                >QR menu for viewing dishes: free</li>
+                <li 
+                  data-lang-en="QR menu with ordering dishes and payment: 5,000 som / month for 1 establishment, 2nd and subsequent - 3,000 som / month" 
+                  data-lang-ru="QR-меню с заказом блюд и оплатой: 5000 сом/месяц за 1 заведение, 2-е и последующие - 3000 сом/месяц"
+                >QR menu with ordering dishes and payment: 5,000 som / month for 1 establishment, 2nd and subsequent - 3,000 som / month </li>
+              </ul>
+
             <div className="form-container">
               <form onSubmit={onSubmit} ref={formRef}>
-                <label htmlFor="Name">Name</label>
-                <input type="text" name="name" id="name" required placeholder="Асанов Асан" />
+              <label  htmlFor="name" 
+                      data-lang-en="Name" 
+                      data-lang-ru="Имя"
+                    >
+                      Name
+                    </label>
+                    <input  type="text" name="name" id="name" required placeholder="Асанов Асан" 
+                      data-lang-en-placeholder="John Doe" 
+                      data-lang-ru-placeholder="Асанов Асан" 
+                    />
 
-                <label htmlFor="E-mail">E-mail</label>
-                <input type="email" name="email" id="email" required placeholder="...@gmail.com" />
+                    <label  htmlFor="email" 
+                      data-lang-en="E-mail" 
+                      data-lang-ru="Эл. почта"
+                    >
+                      E-mail
+                    </label>
+                    <input type="email" name="email" id="email" required placeholder="...@gmail.com" 
+                      data-lang-en-placeholder="example@gmail.com" 
+                      data-lang-ru-placeholder="...@gmail.com" 
+                    />
 
-                <label htmlFor="phone">Phone</label>
-                <input type="tel" name="phone" id="phone" placeholder="+996 555 55 55 55" required />
-
-                <label className="checkbox-text">
-                  <input type="checkbox" name="agreement" required className="checkbox" />
-                  <p className="text-true">
-                    I agree to the processing of personal data and the receipt of 
-                    information and marketing communications in accordance with
-                    <strong> the terms and conditions </strong>and 
-                    <strong> the Personal Data Processing Policy</strong>
-                  </p>
-                </label>
+                    <label htmlFor="phone" 
+                      data-lang-en="Phone" 
+                      data-lang-ru="Телефон"
+                    >
+                      Phone
+                    </label>
+                    <input   type="tel" name="phone"  id="phone"  placeholder="+996 555 55 55 55" required 
+                      data-lang-en-placeholder="+1 234 567 8900" 
+                      data-lang-ru-placeholder="+996 555 55 55 55" 
+                    />
+               <label className="checkbox-text">
+                <input 
+                  type="checkbox" 
+                  name="agreement" 
+                  required 
+                  className="checkbox" 
+                />
+                <p 
+                  className="text-true"
+                  data-lang-en="I agree to the processing of personal data and the receipt of information and marketing communications in accordance with the terms and conditions and the Personal Data Processing Policy"
+                  data-lang-ru="Я соглашаюсь на обработку персональных данных и получение информационных и маркетинговых материалов в соответствии с условиями и Политикой обработки персональных данных">
+                   I agree to the processing of personal data and the receipt of information and marketing communications in accordance with the terms and conditions and the Personal Data Processing Policy
+                </p>
+              </label>
                 <div className="form-btn">
-                  <button className="btn">Send</button>
-                </div>
+                <button className="btn"  data-lang-en="Send" data-lang-ru="Отправить"> Send </button>
+                  </div>
               </form>
             </div>
           </div>
