@@ -16,8 +16,8 @@ function Features() {
               <div className="features">
                   <div className="featurs_block"> 
                     <div className="feature">
-                            <h3 className="feature-title" data-lang-en="Digital QR Menu" data-lang-ru="Цифровое QR-меню">A MENU that sells</h3>
-                                <p className="feature-description" data-lang-en="Replace paper menus with a seamless digital experience." data-lang-ru="Замените бумажные меню на удобный цифровой опыт.">
+                            <h3 className="feature-title" data-lang-en="A MENU that sells" data-lang-ru="МЕНЮ, которое продает">A MENU that sells</h3>
+                                <p className="feature-description" data-lang-en="Entice your guests with colorful photos of dishes and juicy descriptions of their taste, recommend new products!" data-lang-ru="Увлекайте гостей красочными фотографиями блюд и сочными описаниями их вкуса, рекомендуйте новые продукты!">
                                 Entice your guests with colorful photos of dishes and juicy descriptions of their taste, recommend new products!
                                 </p>
                       </div>
