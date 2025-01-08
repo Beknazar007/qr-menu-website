@@ -1,13 +1,12 @@
 .header {
-  position: fixed; /* Фиксирует хедер */
-  top: 0;          /* Располагает в верхней части экрана */
-  left: 0;         /* Выравнивает по левому краю */
-  width: 100%;     /* Растягивает на всю ширину экрана */
-  z-index: 1000;   /* Устанавливает высокий приоритет отображения */
   padding: 20px;
-  background-color: white; 
-  color: #333;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Добавляет тень */
+  background-color: #fff;
+  color: #000;
+  position: fixed; 
+  top: 0;
+  width: 100%;
+  z-index: 1000; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .container {
@@ -35,7 +34,10 @@
 .nav {
   display: flex;
   gap: 30px;
+   transition: max-height 0.5s ease, opacity 0.5s ease;
 }
+
+
 
 .nav a {
   text-decoration: none;
@@ -45,45 +47,91 @@
 }
 
 .nav a:hover {
-  color: #00796b;
+  color: #00574b;
 }
 
-.menu_icon {
-  display: none;
-  font-size: 30px;
-  color: #333;
-  cursor: pointer;
-  padding: 0px 20px 0px 0px 
+
+@media ( min-width:768px) {
+  .menu_icon{
+    display: none;
+  }  
 }
 
 @media (max-width: 768px) {
-  .menu_icon {
-    display: block; 
-  }
-  
   .nav {
-    display: none; 
-  }
-
-  .nav.active {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: #333;
+    background-color: #ffffffd7;
     position: absolute;
-    top: 80px; 
-    right: 20px;
+    top: 74px;
+    right: 0;
     padding: 20px;
-    border-radius: 10px;
-    width: 200px;
+    width: 100%;
+    max-height: 0; 
+    overflow: hidden; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: max-height 0.5s ease, opacity 0.9s ease; 
+    opacity: 0; 
+  }
+
+  .nav.active {
+    max-height: 300px; 
+    opacity: 1; 
   }
 
   .nav a {
-    font-size: 20px;
-    color: white;
+    color: #000; 
+    font-size: 25px;
+    padding: 5px 30px;
   }
 
-  .nav a:hover {
-    color: #00796b;
+  .menu_icon {
+    display: block;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    padding-right: 20px;
   }
+}
+
+.menu_icon {
+  transition: transform 0.3s ease;
+  /* display: none; */
+}
+
+.menu_icon.active {
+  transform: rotate(90deg); 
+}
+
+.icon-translate {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.translate{
+  padding: 0 20px 0 0 ;
+  font-size: 12px;
+}
+
+
+.icon {
+  
+  padding: 3px;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icon.active {
+  transform: scale(1.2); /* Увеличение активной кнопки */
+  opacity: 1;            /* Устанавливаем полную видимость */
+}
+
+.icon:not(.active) {
+  opacity: 0.6;          /* Пониженная видимость для неактивной кнопки */
+}
+
+.icon:hover {
+  transform: scale(1.1); /* Небольшое увеличение при наведении */
 }
