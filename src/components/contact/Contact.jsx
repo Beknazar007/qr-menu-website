@@ -161,7 +161,7 @@ function Contact() {
             href="https://wa.me/+996555560686" 
             target="_blank" 
             data-lang-en="WhatsApp" 
-            data-lang-ru="Вотсап"
+            data-lang-ru="Ватсап"
           >
             <i className="fa fa-whatsapp"></i> WhatsApp
           </a>
