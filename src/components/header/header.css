@@ -135,3 +135,29 @@
 .icon:hover {
   transform: scale(1.1); /* Небольшое увеличение при наведении */
 }
+
+a {
+  text-decoration: none; /* Убираем стандартное подчеркивание */
+  position: relative;
+  color: #007bff; /* Цвет текста */
+  transition: color 0.3s ease; /* Плавный переход для цвета */
+}
+
+a::after {
+  content: ''; /* Создаем псевдоэлемент */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px; /* Толщина подчеркивания */
+  background: #00796b; /* Цвет подчеркивания */
+  transition: width 0.5s ease; /* Плавное увеличение ширины */
+}
+
+a:hover {
+  color: #0056b3; /* Изменение цвета текста при наведении */
+}
+
+a:hover::after {
+  width: 100%; /* Подчеркивание появляется на всю ширину */
+}

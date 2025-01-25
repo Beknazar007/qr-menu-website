@@ -5,9 +5,9 @@ function Testimonial() {
   return (
     <>
       <section id="testimonials" className="section">
-        <h2 className="section-title" data-lang-en="What Our Clients Say" data-lang-ru="Отзывы наших клиентов">There is a free version!</h2>
-        <p className="sectionn-text" data-lang-en="This app transformed our restaurant operations! Highly recommend." data-lang-ru="Это приложение преобразило нашу работу в ресторане! Настоятельно рекомендую.">
-             Still not sure? Try the free version - the same colorful and tempting menu, but without the ability to order and pay! If you and your guests like it, you'll switch to a subscription
+        <h2 className="section-title" data-lang-en="There is a free version!" data-lang-ru="Есть бесплатная версия!">There is a free version!</h2>
+        <p className="sectionn-text" data-lang-en="This app transformed our restaurant operations! Highly recommend." data-lang-ru="Все еще сомневаетесь? Попробуйте бесплатную версию - такое же красочное и манящее меню, но без возможности заказа и оплаты! Если вам и вашим гостям понравится, перейдете на подписку">
+        Still not sure? Try the free version - the same colorful and enticing menu, but without the ability to order and pay! If you and your guests like it, you'll switch to a subscription
         </p>
         <div className="testimonials">
           <div className="testimonial">

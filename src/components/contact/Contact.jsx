@@ -75,10 +75,8 @@ function Contact() {
             <div className="form-container">
               <form onSubmit={onSubmit} ref={formRef}>
               <label  htmlFor="name" 
-                      data-lang-en="Name" 
-                      data-lang-ru="Имя"
+                    
                     >
-                      Name
                     </label>
                     <input  type="text" name="name" id="name" required placeholder="Асанов Асан" 
                       data-lang-en-placeholder="John Doe" 
@@ -86,10 +84,8 @@ function Contact() {
                     />
 
                     <label  htmlFor="email" 
-                      data-lang-en="E-mail" 
-                      data-lang-ru="Эл. почта"
+                     
                     >
-                      E-mail
                     </label>
                     <input type="email" name="email" id="email" required placeholder="...@gmail.com" 
                       data-lang-en-placeholder="example@gmail.com" 
@@ -97,10 +93,8 @@ function Contact() {
                     />
 
                     <label htmlFor="phone" 
-                      data-lang-en="Phone" 
-                      data-lang-ru="Телефон"
+                     
                     >
-                      Phone
                     </label>
                     <input   type="tel" name="phone"  id="phone"  placeholder="+996 555 55 55 55" required 
                       data-lang-en-placeholder="+1 234 567 8900" 
@@ -161,7 +155,7 @@ function Contact() {
             href="https://wa.me/+996555560686" 
             target="_blank" 
             data-lang-en="WhatsApp" 
-            data-lang-ru="Вотсап"
+            data-lang-ru="Ватсап"
           >
             <i className="fa fa-whatsapp"></i> WhatsApp
           </a>
